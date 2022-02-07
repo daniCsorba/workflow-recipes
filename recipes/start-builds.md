@@ -2,12 +2,12 @@
 
 ## Description
 
-Start one or more builds with specified Workflows from the parent Workflow and optionally wait for their completion.
+Start one or more builds in parallel with specified Workflows from the parent Workflow. You can optionally add a Step to wait for their completion.
 
 ## Prerequisites
 
-1. Make sure you have a valid Bitrise API key in your Secrets (`$BITRISE_API_KEY`). See [Personal access](https://devcenter.bitrise.io/en/accounts/personal-access-tokens.html##) tokens for more details.
-2. Have Workflow(s) you would like to run in parallel (`workflow-1` and `workflow-2` in the example).
+- Make sure you have a valid Bitrise API key in your Secrets (`$BITRISE_API_KEY`). See [Personal access tokens](https://devcenter.bitrise.io/en/accounts/personal-access-tokens.html##) for more details.
+- Make sure that you have Workflow(s) you would like to run in parallel (`workflow-1` and `workflow-2` in the example below).
 
 ## Instructions
 
@@ -18,7 +18,7 @@ Start one or more builds with specified Workflows from the parent Workflow and o
 3. (Optional) Add a [Bitrise Wait for Build](https://www.bitrise.io/integrations/steps/build-router-wait) Step. Set the input variables:
     - **Bitrise Access Token**: `$BITRISE_API_KEY`
 
-With the Steps above you can only start a build for the same app. If you would like to start a build for an other app, you can use the [Trigger Bitrise workflow](https://www.bitrise.io/integrations/steps/trigger-bitrise-workflow) Step.
+You can only start a build for the same app using this Workflow Recipe. If you would like to start a build for a different app, you can use the [Trigger Bitrise workflow](https://www.bitrise.io/integrations/steps/trigger-bitrise-workflow) Step.
 
 ## bitrise.yml
 

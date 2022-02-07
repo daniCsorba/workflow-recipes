@@ -1,18 +1,18 @@
 # (iOS/Android) Send QR code to Slack
 
 ## Description
-Sending a QR code of the iOS or Android build uploaded to bitrise.io to Slack.
+Send a QR code of the iOS or Android build uploaded to bitrise.io to Slack.
 
 ## Prerequisites
 
-1. You have your iOS or Android app archived.
-2. You have Slack webhook set up and added to Env Vars (for example, `$SLACK_WEBHOOK`). See [Configuring Slack integration](https://devcenter.bitrise.io/en/builds/configuring-build-settings/configuring-slack-integration.html)
+- You have your iOS or Android app archived.
+- You have Slack webhook set up and added to Env Vars (for example, `$SLACK_WEBHOOK`). See [Configuring Slack integration](https://devcenter.bitrise.io/en/builds/configuring-build-settings/configuring-slack-integration.html) for details. 
 
 ## Instructions
 
-1. Add the [Deploy to Bitrise.io - Apps, Logs, Artifacts](https://www.bitrise.io/integrations/steps/deploy-to-bitrise-io) step.
-2. Add the [Create install page QR code](https://www.bitrise.io/integrations/steps/create-install-page-qr-code) step.
-3. Add the [Send a Slack message](https://www.bitrise.io/integrations/steps/slack) step. Set the input variables:
+1. Add the [Deploy to Bitrise.io - Apps, Logs, Artifacts](https://www.bitrise.io/integrations/steps/deploy-to-bitrise-io) Step.
+2. Add the [Create install page QR code](https://www.bitrise.io/integrations/steps/create-install-page-qr-code) Step.
+3. Add the [Send a Slack message](https://www.bitrise.io/integrations/steps/slack) Step. Set the input variables:
     - **Slack Webhook URL**: for example, `$SLACK_WEBHOOK`.
     - **Target Slack channel, group or username**: for example, `#build-notifications`.
     - **A URL to an image file that will be displayed as a thumbnail**: `$BITRISE_PUBLIC_INSTALL_PAGE_QR_CODE_IMAGE_URL`.

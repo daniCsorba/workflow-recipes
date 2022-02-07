@@ -2,13 +2,13 @@
 
 ## Description
 
-Speed up cloning the repository by specifying a clone depth. Keep in mind that in case of Pull Request you need to make sure that both the source and destination branch are available in the history.
+You can speed up the cloning of repositories by specifying clone depth. In case of pull request builds, you need to set the depth history to a number where both the source and destination branches are contained.
 
 ## Instructions
 
-1. Set the **Limit fetching to the specified number of commits** input variable:
-    - In the case of builds running on a single branch you can set it to `1`.
-    - In the case of Pull Request builds set it to a depth that will contain both the source and target branches. For example, `100`. 
+1. Set the **Limit fetching to the specified number of commits** input variable based on the build you are running:
+    - If you run a build on a single branch, set it to `1`.
+    - If you run pull request build, set it to a depth that contains both the source and target branches. For example, `100`. 
 
 ## bitrise.yml
 

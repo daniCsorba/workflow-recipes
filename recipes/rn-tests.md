@@ -2,7 +2,7 @@
 
 ## Description
 
-Run tests (for example, Jest).
+Run tests, for example, Jest.
 
 ## Instructions
 

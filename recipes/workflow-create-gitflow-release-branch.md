@@ -1,7 +1,7 @@
 # Example Workflow: Create Gitflow release branch
 
 ## Description
-An example Workflow that creates a Gitflow release branch for a specific version. The version can be passed as an Environment Variable for the Workflow.
+Example Workflow that creates a Gitflow release branch for a specific version. The version can be passed on as an Environment Variable for the Workflow.
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ Make sure that Bitrise has write access to your repository. You need to [manuall
 ## bitrise.yml
 
 ```
-# Run the workflow with $VERSION env set up to, for examepl, '2.4.3'
+# Run the workflow with $VERSION env set up to, for example, '2.4.3'
 create-release-branch:
   steps:
   - activate-ssh-key@4:

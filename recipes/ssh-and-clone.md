@@ -2,13 +2,13 @@
 
 ## Description
 
-Clone a git repo.
+Clone a Git repository.
 
 ## Instructions
 
-1. Make sure that the Workflow has the [Activate SSH key (RSA private key)](https://github.com/bitrise-steplib/steps-activate-ssh-key) step. This allows the Git client on the build VM to access private repositories.
+1. Make sure you have the [Activate SSH key (RSA private key)](https://github.com/bitrise-steplib/steps-activate-ssh-key) Step in your Workflow. This allows the Git client on the build VM to access private repositories.
 2. Add the [Git Clone Repository](https://github.com/bitrise-steplib/steps-git-clone) Step.
-    - Check out the optional inputs in the Workflow Editor or in the Step documentation.
+    - Check out the optional input variables in the Workflow Editor or in the Step documentation.
 
 ## bitrise.yml
 
